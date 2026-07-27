@@ -1,0 +1,546 @@
+{
+  "diabetic_data": {
+    "dataset": "diabetic_data",
+    "is_pilot": false,
+    "elbo": 6.806409801903959e-05,
+    "lambda_adv_selected": 0.01,
+    "site_classifier_acc": 0.010809141211211681,
+    "selected_hyperparams": {
+      "lambda_inv": 0.1,
+      "gamma_fair": 0.1
+    },
+    "hyperparam_sweep": [
+      {
+        "lambda_inv": 0.001,
+        "gamma_fair": 0.001,
+        "AUROC": 0.5042992574328552,
+        "F1": 0.0,
+        "Brier": 0.10851981187733828,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.001,
+        "gamma_fair": 0.01,
+        "AUROC": 0.5028663302974943,
+        "F1": 0.0,
+        "Brier": 0.11019395563824114,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.001,
+        "gamma_fair": 0.1,
+        "AUROC": 0.5056187170957313,
+        "F1": 0.0,
+        "Brier": 0.11245896499625109,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.01,
+        "gamma_fair": 0.001,
+        "AUROC": 0.5018755887585672,
+        "F1": 0.0,
+        "Brier": 0.1040878666335138,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.01,
+        "gamma_fair": 0.01,
+        "AUROC": 0.501902679009435,
+        "F1": 0.0,
+        "Brier": 0.10962026911022268,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.01,
+        "gamma_fair": 0.1,
+        "AUROC": 0.5040354736881827,
+        "F1": 0.0,
+        "Brier": 0.11220350097466245,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.1,
+        "gamma_fair": 0.001,
+        "AUROC": 0.5017359614511789,
+        "F1": 0.0,
+        "Brier": 0.10996070122998394,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.1,
+        "gamma_fair": 0.01,
+        "AUROC": 0.5065029584631155,
+        "F1": 0.0,
+        "Brier": 0.10807053211419589,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.1,
+        "gamma_fair": 0.1,
+        "AUROC": 0.5068017518131427,
+        "F1": 0.0,
+        "Brier": 0.10905355102138045,
+        "EOD": 0.0,
+        "DPD": 0.0
+      }
+    ],
+    "epsilon_sensitivity": [
+      {
+        "epsilon": 0.02,
+        "AUROC": 0.4895438993429449,
+        "F1": 0.0,
+        "Brier": 0.09931606562550452,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "epsilon": 0.05,
+        "AUROC": 0.4916947399658972,
+        "F1": 0.0,
+        "Brier": 0.09930393449531286,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "epsilon": 0.1,
+        "AUROC": 0.49781963056424366,
+        "F1": 0.0,
+        "Brier": 0.099253367083987,
+        "EOD": 0.0,
+        "DPD": 0.0
+      }
+    ],
+    "test_metrics": {
+      "AUROC": 0.511331032452858,
+      "F1": 0.0,
+      "Brier": 0.10498573795344894,
+      "EOD": 0.0,
+      "DPD": 0.0
+    },
+    "baseline_metrics": {
+      "LogisticRegression": {
+        "AUROC": 0.645646257985011,
+        "F1": 0.03083952027412907,
+        "Brier": 0.0959799934129792,
+        "EOD": 0.017134943548576392,
+        "DPD": 0.004829251466022766
+      },
+      "XGBoost": {
+        "AUROC": 0.6582885948727416,
+        "F1": 0.029511918274687854,
+        "Brier": 0.09576820123797421,
+        "EOD": 0.002689951411872402,
+        "DPD": 0.004139358399448086
+      },
+      "Fairlearn_Reductions": {
+        "note": "skipped (No module named 'fairlearn')"
+      }
+    },
+    "significance_vs_baselines": {
+      "LogisticRegression": {
+        "p_raw": 0.0,
+        "alpha_corrected": 0.025,
+        "significant": true
+      },
+      "XGBoost": {
+        "p_raw": 0.0,
+        "alpha_corrected": 0.025,
+        "significant": true
+      }
+    },
+    "risk_ratio": 0.9935840041509263,
+    "e_value": 1.087074577644881,
+    "mediation": {
+      "TV": {
+        "mean": -0.0019180719344817508,
+        "ci_lo": -0.0019419685201891787,
+        "ci_hi": -0.0018955990885726724
+      },
+      "SE": {
+        "mean": -0.002908896701668591,
+        "ci_lo": -0.0029557810557631543,
+        "ci_hi": -0.002861553014437515
+      },
+      "IE": {
+        "mean": -0.0004636235836474554,
+        "ci_lo": -0.000487468714672043,
+        "ci_hi": -0.0004387938538410616
+      },
+      "DE": {
+        "mean": -0.0014544483508342955,
+        "ci_lo": -0.0014778905278815771,
+        "ci_hi": -0.0014307765072187576
+      }
+    },
+    "ablations": {
+      "A-ICF (full)": {
+        "AUROC": 0.4943905221511702,
+        "F1": 0.0,
+        "Brier": 0.09947895497515478,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-IRM": {
+        "AUROC": 0.48983998749520946,
+        "F1": 0.0,
+        "Brier": 0.0994702913445675,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-SCD": {
+        "AUROC": 0.5055493686500192,
+        "F1": 0.0,
+        "Brier": 0.09944736932024134,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-PCFairness": {
+        "AUROC": 0.4844488761094453,
+        "F1": 0.0,
+        "Brier": 0.09957307762259801,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-FairImputation": {
+        "AUROC": 0.49416006028056847,
+        "F1": 0.0,
+        "Brier": 0.09935799572280749,
+        "EOD": 0.0,
+        "DPD": 0.0
+      }
+    }
+  },
+  "framingham": {
+    "dataset": "framingham",
+    "is_pilot": false,
+    "elbo": 0.3611267827591806,
+    "lambda_adv_selected": 0.001,
+    "site_classifier_acc": 1.0,
+    "selected_hyperparams": {
+      "lambda_inv": 0.01,
+      "gamma_fair": 0.1
+    },
+    "hyperparam_sweep": [
+      {
+        "lambda_inv": 0.001,
+        "gamma_fair": 0.001,
+        "AUROC": 0.44427442954688906,
+        "F1": 0.24641833810888253,
+        "Brier": 0.28062688226138766,
+        "EOD": 0.03717948717948716,
+        "DPD": 0.0066257272139624845
+      },
+      {
+        "lambda_inv": 0.001,
+        "gamma_fair": 0.01,
+        "AUROC": 0.5078323738117553,
+        "F1": 0.26705370101596515,
+        "Brier": 0.27710801217896003,
+        "EOD": 0.028205128205128216,
+        "DPD": 0.024523270846800282
+      },
+      {
+        "lambda_inv": 0.001,
+        "gamma_fair": 0.1,
+        "AUROC": 0.5030889581699596,
+        "F1": 0.0,
+        "Brier": 0.15080749951716999,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.01,
+        "gamma_fair": 0.001,
+        "AUROC": 0.5450720119350457,
+        "F1": 0.0,
+        "Brier": 0.13600754294476958,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.01,
+        "gamma_fair": 0.01,
+        "AUROC": 0.5755216800872176,
+        "F1": 0.2554517133956386,
+        "Brier": 0.24148713166095165,
+        "EOD": 0.16666666666666669,
+        "DPD": 0.05910633484162897
+      },
+      {
+        "lambda_inv": 0.01,
+        "gamma_fair": 0.1,
+        "AUROC": 0.5509439014593653,
+        "F1": 0.0,
+        "Brier": 0.15798757616735715,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.1,
+        "gamma_fair": 0.001,
+        "AUROC": 0.5335386263221314,
+        "F1": 0.0,
+        "Brier": 0.13893568345148855,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "lambda_inv": 0.1,
+        "gamma_fair": 0.01,
+        "AUROC": 0.4831780884800031,
+        "F1": 0.26256983240223464,
+        "Brier": 0.2963311887195669,
+        "EOD": 0.06666666666666665,
+        "DPD": 0.0017372333548804075
+      },
+      {
+        "lambda_inv": 0.1,
+        "gamma_fair": 0.1,
+        "AUROC": 0.5161716045368475,
+        "F1": 0.24958402662229617,
+        "Brier": 0.2624928695101923,
+        "EOD": 0.09145299145299146,
+        "DPD": 0.01575630252100846
+      }
+    ],
+    "epsilon_sensitivity": [
+      {
+        "epsilon": 0.02,
+        "AUROC": 0.47459490740740734,
+        "F1": 0.0,
+        "Brier": 0.13113591221196025,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "epsilon": 0.05,
+        "AUROC": 0.4781442901234568,
+        "F1": 0.0,
+        "Brier": 0.13195406033639556,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      {
+        "epsilon": 0.1,
+        "AUROC": 0.4478587962962963,
+        "F1": 0.0,
+        "Brier": 0.13260630803010387,
+        "EOD": 0.0,
+        "DPD": 0.0
+      }
+    ],
+    "test_metrics": {
+      "AUROC": 0.4603587962962963,
+      "F1": 0.20705882352941177,
+      "Brier": 0.25148459095551107,
+      "EOD": 0.05523809523809531,
+      "DPD": 0.04411332718819322
+    },
+    "baseline_metrics": {
+      "LogisticRegression": {
+        "AUROC": 0.6897955246913581,
+        "F1": 0.07476635514018691,
+        "Brier": 0.12196428540082951,
+        "EOD": 0.006993006993006992,
+        "DPD": 0.004203681006452398
+      },
+      "XGBoost": {
+        "AUROC": 0.5711226851851852,
+        "F1": 0.08130081300813008,
+        "Brier": 0.1508092582744564,
+        "EOD": 0.029720279720279713,
+        "DPD": 0.0037377308226046596
+      },
+      "Fairlearn_Reductions": {
+        "note": "skipped (No module named 'fairlearn')"
+      }
+    },
+    "significance_vs_baselines": {
+      "LogisticRegression": {
+        "p_raw": 0.0,
+        "alpha_corrected": 0.025,
+        "significant": true
+      },
+      "XGBoost": {
+        "p_raw": 0.0,
+        "alpha_corrected": 0.025,
+        "significant": true
+      }
+    },
+    "risk_ratio": 1.51520572450805,
+    "e_value": 2.3987455725476923,
+    "mediation": {
+      "TV": {
+        "mean": 0.053087707145446215,
+        "ci_lo": 0.053073313184972055,
+        "ci_hi": 0.05310142053222073
+      },
+      "SE": {
+        "mean": 0.10989901275762512,
+        "ci_lo": 0.10986799551805504,
+        "ci_hi": 0.10992907889562958
+      },
+      "IE": {
+        "mean": -0.0018617992333663325,
+        "ci_lo": -0.0018816217879054722,
+        "ci_hi": -0.0018403577021642483
+      },
+      "DE": {
+        "mean": 0.05494950637881256,
+        "ci_lo": 0.05493399775902752,
+        "ci_hi": 0.05496453944781479
+      }
+    },
+    "ablations": {
+      "A-ICF (full)": {
+        "AUROC": 0.5234014880553908,
+        "F1": 0.2652439024390244,
+        "Brier": 0.28974696597672134,
+        "EOD": 0.12159863945578231,
+        "DPD": 0.03014087038127844
+      },
+      "-IRM": {
+        "AUROC": 0.40062735497197943,
+        "F1": 0.0,
+        "Brier": 0.1417493698038582,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-SCD": {
+        "AUROC": 0.4423043819214659,
+        "F1": 0.0,
+        "Brier": 0.1395984184758645,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-PCFairness": {
+        "AUROC": 0.41975403094696173,
+        "F1": 0.0,
+        "Brier": 0.1331042519016418,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-FairImputation": {
+        "AUROC": 0.44456132968651374,
+        "F1": 0.0,
+        "Brier": 0.13390618159362672,
+        "EOD": 0.0,
+        "DPD": 0.0
+      }
+    }
+  },
+  "mimic_iv": {
+    "dataset": "mimic_iv",
+    "is_pilot": true,
+    "elbo": 0.06736515462398529,
+    "lambda_adv_selected": 0.1,
+    "site_classifier_acc": 0.0572916679084301,
+    "selected_hyperparams": {
+      "lambda_inv": 1.0,
+      "gamma_fair": 1.0
+    },
+    "hyperparam_sweep": [
+      {
+        "note": "sweep skipped for pilot dataset"
+      }
+    ],
+    "epsilon_sensitivity": [
+      {
+        "note": "epsilon sweep skipped for pilot dataset"
+      }
+    ],
+    "test_metrics": {
+      "AUROC": 0.5641025641025641,
+      "F1": 0.13953488372093023,
+      "Brier": 0.27185421479649063,
+      "EOD": NaN,
+      "DPD": 0.16666666666666663
+    },
+    "baseline_metrics": {
+      "LogisticRegression": {
+        "AUROC": 1.0,
+        "F1": 1.0,
+        "Brier": 0.014119801156617777,
+        "EOD": NaN,
+        "DPD": 1.0
+      },
+      "XGBoost": {
+        "AUROC": 1.0,
+        "F1": 1.0,
+        "Brier": 0.0012001300580287472,
+        "EOD": NaN,
+        "DPD": 1.0
+      },
+      "Fairlearn_Reductions": {
+        "note": "skipped (No module named 'fairlearn')"
+      }
+    },
+    "significance_vs_baselines": {
+      "LogisticRegression": {
+        "p_raw": 0.0,
+        "alpha_corrected": 0.025,
+        "significant": true
+      },
+      "XGBoost": {
+        "p_raw": 0.0,
+        "alpha_corrected": 0.025,
+        "significant": true
+      }
+    },
+    "risk_ratio": 0.3935185185185185,
+    "e_value": 4.520166461488404,
+    "mediation": {
+      "TV": -0.010904877472946235,
+      "SE": -0.020681797353703117,
+      "IE": -0.000563978796094676,
+      "DE": -0.010340898676851559,
+      "CI": null,
+      "note": "pilot, unpowered, point estimate only"
+    },
+    "ablations": {
+      "A-ICF (full)": {
+        "AUROC": 0.875,
+        "F1": 0.0,
+        "Brier": 0.15799796000301566,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-IRM": {
+        "AUROC": 0.6124999999999999,
+        "F1": 0.0,
+        "Brier": 0.21355219660580554,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-SCD": {
+        "AUROC": 0.2875,
+        "F1": 0.0,
+        "Brier": 0.1312827468282959,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-PCFairness": {
+        "AUROC": 0.65,
+        "F1": 0.0,
+        "Brier": 0.14030757451295855,
+        "EOD": 0.0,
+        "DPD": 0.0
+      },
+      "-FairImputation": {
+        "AUROC": 0.7875,
+        "F1": 0.0,
+        "Brier": 0.1549034565622213,
+        "EOD": 0.0,
+        "DPD": 0.0
+      }
+    }
+  }
+}
